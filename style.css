@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #3551b5), url(waterfall.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    max-width: 900px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: transparent;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #FFF;
+    cursor: text;
+    transition: .2s;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #FFF;
+    background: transparent;
+    outline: 0;
+    border: 1px solid #FFF;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row,
+.input-group {
+    flex-basis: 48%;
+}
